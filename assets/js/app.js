@@ -157,6 +157,18 @@
     Array.prototype.forEach.call(document.querySelectorAll(".pulse"), function (p) { p.remove(); });
   }
 
+  /* ---------- Links ---------- */
+  /* Anything that leaves the page (other sites, the CV PDF) opens in a new tab; in-page anchors
+     and mailto: stay as they are. Runs on rendered links and on ones added later (email panel). */
+  function newTab(a) {
+    var href = a.getAttribute("href") || "";
+    if (!href || href.charAt(0) === "#" || href.indexOf("mailto:") === 0) return;
+    a.target = "_blank";
+    a.rel = "noopener";
+  }
+  Array.prototype.forEach.call(document.querySelectorAll("a[href]"), newTab);
+  document.addEventListener("click", function (e) { var a = e.target.closest("a[href]"); if (a) newTab(a); }, true);
+
   /* ---------- Theme ---------- */
   var root = document.documentElement;
   function current() {
