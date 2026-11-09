@@ -12,10 +12,6 @@ copy it again:
 
     cp ../cvs/Jawher-Jabri-AI-Research-Engineer.pdf assets/cv/
 
-## Preview
-
-    python3 -m http.server 8000    # then open http://localhost:8000
-
 ## Deploy
 
 Push this folder to a public GitHub repository named `Geawher.github.io`; GitHub Pages
