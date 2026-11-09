@@ -4,8 +4,8 @@ Personal site of Jawher Jabri. Plain HTML, CSS and JavaScript: no framework, no 
 
 ## Edit
 
-All content is in `assets/js/data.js`. Layout lives in `assets/js/app.js` (rendering and the
-RL-loop figure) and `assets/css/style.css` (light and dark themes).
+All content is in `assets/js/data.js`. Layout lives in `assets/js/app.js` (rendering, the "What I build"
+figure and the email panel) and `assets/css/style.css` (light and dark themes).
 
 The CV is a copy of `../cvs/Jawher-Jabri-AI-Research-Engineer.pdf`. After rebuilding the CV,
 copy it again:
